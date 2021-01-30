@@ -1,0 +1,4 @@
+@mixin bg-color-gradient {
+  background: #f7f8f8; /* fallback for old browsers */
+  background: linear-gradient(to right, #acbb78, #f7f8f8);
+}

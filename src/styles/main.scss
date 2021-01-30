@@ -1,0 +1,36 @@
+@import "_var";
+@import "_mixin";
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $main_color;
+  font-size: 2em;
+  @include bg-color-gradient;
+}
+
+img {
+  max-width: 90%;
+}
+
+footer {
+  margin: $footer_margin;
+  color: $color_footer;
+  border: solid 1px green;
+}
+
+p {
+  margin: 50px;
+}
+
+.blocks {
+  display: flex;
+  &:hover {
+    background-color: rgba(0, 0, 255, 0.336);
+  }
+  transition: all 2s linear;
+
+  .children {
+    width: 100px;
+    height: 100px;
+  }
+}
